@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document author: mccrush.ru*/
+
+
+table tr .selec-color {
+	cursor: pointer;
+}
+
+table tr td {
+	border: none;
+}
+
+.table td {
+	border: 2px solid #fff;
+}
+
+table tr #color1 {
+	background: rgba(255,0,0,0.70);
+}
+table tr #color2 {
+	background: rgba(255,128,0,0.70);
+}
+table tr #color3 {
+	background: rgba(255,255,0,0.70);
+}
+table tr #color4 {
+	background: rgba(0,255,0,0.70);
+}
+table tr #color5 {
+	background: rgba(0,255,255,0.70);
+}
+table tr #color6 {
+	background: rgba(0,0,255,0.70);
+}
+table tr #color7 {
+	background: rgba(128,0,255,0.70);
+}
