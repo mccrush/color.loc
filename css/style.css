@@ -35,3 +35,7 @@ table tr #color6 {
 table tr #color7 {
 	background: rgba(128,0,255,0.70);
 }
+
+.showPersent {
+	opacity: 0;
+}

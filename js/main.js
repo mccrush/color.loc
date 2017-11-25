@@ -85,7 +85,8 @@ function mainFunc() {
 		// Заполним массив по количеству получившихся оттенков с шагом
 		var masOtten = [];
 		for (var i = 1; i < 100; i += stepOtten){
-			masOtten.push('0.' + i);
+			var newI = i < 10 ? i + '0' : i;
+			masOtten.push('0.' + newI);
 		}
 		console.log('Длина получившегося массива = ' + masOtten.length);
 		console.log(masOtten);
@@ -104,8 +105,7 @@ function mainFunc() {
 				realColor.push(nasishen);
 				var isTd = document.createElement('td');
 				isTd.style.background = 'rgba(' + valColor[selectColor] + ','+ nasishen +')';
-				//isTd.innerHTML = i + '' + j + ' ' + nasishen;
-				isTd.innerHTML = '&nbsp;';
+				isTd.innerHTML = '<span class="showPersent">' + nasishen.substr(2) + '%</span>';
 				isTr.appendChild(isTd);
 			}
 			newTable.appendChild(isTr);
@@ -120,8 +120,15 @@ function mainFunc() {
 	var result = document.getElementById('result');
 	var proverka = document.getElementById('proverka');
 	var outResult = document.getElementById('outResult');
+	
+	
+
 	proverka.onclick = function(){
-		outResult.innerHTML = 'Вы различили ' +result.value+ ' из ' + realLength + ' оттенков';
+		outResult.innerHTML = 'Вы различили ' + result.value + ' из ' + realLength + ' оттенков';
+		var spanShowPersent = document.getElementsByClassName('showPersent');
+		for (var i = 0; i < spanShowPersent.length; i++) {
+			spanShowPersent[i].style = 'opacity: 1;'; 
+		}
 	}
 
 }
