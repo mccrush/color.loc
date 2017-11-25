@@ -1,4 +1,4 @@
-// JavaScript Document author: mccrush.ru
+// JavaScript Document
 'use strict';
 
 function mainFunc() {
