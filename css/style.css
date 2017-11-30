@@ -1,17 +1,18 @@
-@charset "utf-8";
-/* CSS Document author: mccrush.ru*/
-
+/* CSS Document author: mccrush.ru */
 
 table tr .selec-color {
 	cursor: pointer;
 }
 
 table tr td {
-	border: none;
+	border: none !important;
+
 }
 
 .table td {
-	border: 2px solid #fff;
+	border: 2px solid #fff !important;
+	text-align: center;
+	height: 40px;
 }
 
 table tr #color1 {

@@ -1,4 +1,5 @@
-// JavaScript Document
+/* JavaScript Document author: mccrush.ru */
+
 'use strict';
 
 function mainFunc() {
@@ -127,7 +128,7 @@ function mainFunc() {
 		outResult.innerHTML = 'Вы различили ' + result.value + ' из ' + realLength + ' оттенков';
 		var spanShowPersent = document.getElementsByClassName('showPersent');
 		for (var i = 0; i < spanShowPersent.length; i++) {
-			spanShowPersent[i].style = 'opacity: 1;'; 
+			spanShowPersent[i].style.opacity = '1';
 		}
 	}
 
